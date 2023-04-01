@@ -14,3 +14,7 @@ $.ajax(settings).done(function (response){
     eth.innerHTML = response.ethereum.usd;
     doge.innerHTML = response.dogecoin.usd;
 });
+
+if (window.innerWidth < 1024) {
+  alert("Sorry, your screen size is not optimized for this website. Please adjust your screen size or try viewing this website on a different device.");
+}
